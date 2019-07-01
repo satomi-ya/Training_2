@@ -72,6 +72,9 @@ html {
             margin-left: 20px;
           }
           .appstore , .googleplay {
+            display:inline-block;
+            vertical-align: middle;
+            line-height:normal;
             width: 311px;
             height: 77px;
             border-radius: 100px;
@@ -84,7 +87,8 @@ html {
             }
             a {
               margin-left: 15px;
-              margin-top: 15px;
+              margin-top: 20px;
+              margin-bottom: 20px;
               text-decoration: none;
               color: #fff;
               font-size: 14px;
@@ -238,6 +242,9 @@ html {
             margin-left: 20px;
           }
           .appstore , .googleplay {
+            display:inline-block;
+            vertical-align: middle;
+            line-height:normal;
             width: 311px;
             height: 77px;
             border-radius: 100px;
@@ -250,7 +257,8 @@ html {
             }
             a {
               margin-left: 15px;
-              margin-top: 15px;
+              margin-top: 20px;
+              margin-bottom: 20px;
               text-decoration: none;
               color: #fff;
               font-size: 14px;
