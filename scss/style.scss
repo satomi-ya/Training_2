@@ -1,20 +1,32 @@
 html {
-  // width: 1920px;
   width: 100%;
   height: 4109px;
   font-family: Helvetica;
+@media (min-width: 768px) and (max-width: 1024px) {
+  html body .section1 .section1_box .message_box .top_message {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body .section1 .section1_box .message_box .top_message {
+    font-size: 32px;
+  }
+}
   body {
     .section1 {
       height: 960px;
       width: 100%;
       background-image: url("../img/header_image.png");
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: 50% 50%;
       background-size: cover;
       .section1_box {
         margin: 0 180px 110px 190px;
         padding-top: 54.1px;
         .header {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           .header_logo {
             width: 189px;
@@ -28,11 +40,10 @@ html {
         }
         .message_box {
           background-image: url("../img/border.png");
-          background-repeat : no-repeat;
+          background-repeat: no-repeat;
           background-position: center;
           .top_message {
-            // font-size: 90px;
-            font-size: 4.375vw;
+            font-size: 90px;
             letter-spacing: 4.2px;
             color: #fff;
             margin-top: 282px;
@@ -46,8 +57,14 @@ html {
               color: #9071ea;
               margin-left: 850px;
               .gnav_flexbox {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
                 justify-content: flex-end;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 justify-content: space-between;
                 li {
                   list-style: none;
@@ -64,7 +81,11 @@ html {
           color: #fff;
           letter-spacing: 0.4px;
           margin-top: 177px;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
           .appstore {
             margin-right: 20px;
@@ -72,136 +93,145 @@ html {
           .googleplay {
             margin-left: 20px;
           }
-          .appstore , .googleplay {
-            display:inline-block;
+          .appstore, .googleplay {
+            display: inline-block;
             vertical-align: middle;
-            line-height:normal;
+            line-height: normal;
             width: 311px;
             height: 77px;
             border-radius: 100px;
+            -webkit-box-shadow: 0 16px 24px 0 rgba(10, 14, 52, 0.5);
             box-shadow: 0 16px 24px 0 rgba(10, 14, 52, 0.5);
             background-color: #5c3caf;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            .icon_apple , .icon_google {
+          }
+          .appstore {
+            .icon_apple, .icon_google {
               margin-left: 40px;
               margin-top: 15px;
             }
-            a {
-              margin-left: 15px;
-              margin-top: 20px;
-              margin-bottom: 20px;
-              text-decoration: none;
-              color: #fff;
-              font-size: 14px;
-              // 見本は14pxだけど明らかに入らない。
-              // 一定以上の小ささにならない？
+          }
+          .googleplay {
+            .icon_apple, .icon_google {
+              margin-left: 40px;
+              margin-top: 15px;
             }
           }
-        }
-      }
-    }
-    .section2 {
-      .section2_box {
-        position: relative;
-        display: flex;
-        height: 730px;
-        .section2_messagebox {
-          margin-left: 122px;
-          margin-top: 235px;
-          .section2_topmessage {
-            color: #e7e7e7;
-            font-size: 90px;
-            margin-bottom: 92px;
-          }
-          .section2_message {
-            font-size: 24px;
-            letter-spacing: 1.12px;
-          }
-        }
-        .No1 {
-          width: 168px;
-          height: 155px;
-          background-color: #5e3db3;
-          display: inline-block;
-          position: absolute;
-          top: 211px;
-          left: 876px;
-          p {
+          .appstore a, .googleplay a {
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-decoration: none;
             color: #fff;
-            line-height: 155px;
-            text-align: center;
+            font-size: 14px;
           }
         }
       }
     }
-    .section3 {
-      .section3_box {
-        position: relative;
-        display: flex;
-        height: 730px;
-        .section3_messagebox {
-          margin-left: 195px;
-          margin-top: 235px;
-          .section3_topmessage {
-            color: #e7e7e7;
-            font-size: 90px;
-            margin-bottom: 92px;
-          }
-          .section3_message {
-            font-size: 24px;
-            letter-spacing: 1.12px;
-          }
+    .section2 .section2_box {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 730px;
+      .section2_messagebox {
+        margin-left: 122px;
+        margin-top: 235px;
+        .section2_topmessage {
+          color: #e7e7e7;
+          font-size: 90px;
+          margin-bottom: 92px;
         }
-        .section3_img {
-          margin-left: 300px;
+        .section2_message {
+          font-size: 24px;
+          letter-spacing: 1.12px;
         }
-        .No2 {
-          width: 168px;
-          height: 155px;
-          background-color: #5e3db3;
-          display: inline-block;
-          position: absolute;
-          top: 211px;
-          left: 876px;
-          p {
-            color: #fff;
-            line-height: 155px;
-            text-align: center;
-          }
+      }
+      .No1 {
+        width: 168px;
+        height: 155px;
+        background-color: #5e3db3;
+        display: inline-block;
+        position: absolute;
+        top: 211px;
+        left: 876px;
+        p {
+          color: #fff;
+          line-height: 155px;
+          text-align: center;
         }
       }
     }
-    .section4 {
-      .section4_box {
-        position: relative;
-        display: flex;
-        height: 730px;
-        .section4_messagebox {
-          margin-left: 122px;
-          margin-top: 235px;
-          .section4_topmessage {
-            color: #e7e7e7;
-            font-size: 90px;
-            margin-bottom: 92px;
-          }
-          .section4_message {
-            font-size: 24px;
-            letter-spacing: 1.12px;
-          }
+    .section3 .section3_box {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 730px;
+      .section3_messagebox {
+        margin-left: 195px;
+        margin-top: 235px;
+        .section3_topmessage {
+          color: #e7e7e7;
+          font-size: 90px;
+          margin-bottom: 92px;
         }
-        .No3 {
-          width: 168px;
-          height: 155px;
-          background-color: #5e3db3;
-          display: inline-block;
-          position: absolute;
-          top: 211px;
-          left: 876px;
-          p {
-            color: #fff;
-            line-height: 155px;
-            text-align: center;
-          }
+        .section3_message {
+          font-size: 24px;
+          letter-spacing: 1.12px;
+        }
+      }
+      .section3_img {
+        margin-left: 300px;
+      }
+      .No2 {
+        width: 168px;
+        height: 155px;
+        background-color: #5e3db3;
+        display: inline-block;
+        position: absolute;
+        top: 211px;
+        left: 876px;
+        p {
+          color: #fff;
+          line-height: 155px;
+          text-align: center;
+        }
+      }
+    }
+    .section4 .section4_box {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 730px;
+      .section4_messagebox {
+        margin-left: 122px;
+        margin-top: 235px;
+        .section4_topmessage {
+          color: #e7e7e7;
+          font-size: 90px;
+          margin-bottom: 92px;
+        }
+        .section4_message {
+          font-size: 24px;
+          letter-spacing: 1.12px;
+        }
+      }
+      .No3 {
+        width: 168px;
+        height: 155px;
+        background-color: #5e3db3;
+        display: inline-block;
+        position: absolute;
+        top: 211px;
+        left: 876px;
+        p {
+          color: #fff;
+          line-height: 155px;
+          text-align: center;
         }
       }
     }
@@ -212,11 +242,12 @@ html {
         margin: 0 476px 150px 491px;
         padding-top: 226px;
         .bottom_message {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           background-image: url("../img/border.png");
-          background-repeat : no-repeat;
+          background-repeat: no-repeat;
           background-position: center;
-          // background-positionするとborderが消えた
           .bottom_message_p {
             margin-left: 21px;
             .bottom_message_p1 {
@@ -234,7 +265,11 @@ html {
           color: #fff;
           letter-spacing: 0.4px;
           margin-top: 177px;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
           .appstore {
             margin-right: 20px;
@@ -242,45 +277,56 @@ html {
           .googleplay {
             margin-left: 20px;
           }
-          .appstore , .googleplay {
-            display:inline-block;
+          .appstore, .googleplay {
+            display: inline-block;
             vertical-align: middle;
-            line-height:normal;
+            line-height: normal;
             width: 311px;
             height: 77px;
             border-radius: 100px;
+            -webkit-box-shadow: 0 16px 24px 0 rgba(10, 14, 52, 0.5);
             box-shadow: 0 16px 24px 0 rgba(10, 14, 52, 0.5);
             background-color: #5c3caf;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            .icon_apple , .icon_google{
+          }
+          .appstore {
+            .icon_apple, .icon_google {
               margin-left: 40px;
               margin-top: 15px;
             }
-            a {
-              margin-left: 15px;
-              margin-top: 20px;
-              margin-bottom: 20px;
-              text-decoration: none;
-              color: #fff;
-              font-size: 14px;
+          }
+          .googleplay {
+            .icon_apple, .icon_google {
+              margin-left: 40px;
+              margin-top: 15px;
             }
+          }
+          .appstore a, .googleplay a {
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
           }
         }
       }
       footer {
         height: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background-color: rgba(10, 14, 52, 0.6);
         padding: 70px 43px 0 48px;
         color: #fff;
         .footerlogo {
           height: 32.9px;
-          // footerにheightを設定したらlogoが伸びた
-          // logoにheightを設定したら直ったがやり方あってるのかわからない
         }
         .social {
           margin-left: 590px;
-          .icon_fb ,.icon_tw ,.icon_itg {
+          .icon_fb, .icon_tw, .icon_itg {
             margin-left: 50px;
             color: #fff;
           }
