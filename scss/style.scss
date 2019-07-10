@@ -3,6 +3,22 @@ html {
   width: 100%;
   height: 4109px;
   font-family: Helvetica;
+
+  $widthPC: 1024px;
+  $widthTab: 768px;
+  $widthSp: 568px;
+
+  @mixin tab {
+    @media (min-width: $widthTab) and (max-width: ($widthPC)) {
+      @content;
+    }
+  }
+  @mixin sp {
+    @media (max-width: ($widthTab)) {
+      @content;
+    }
+  }
+
   body {
     .section1 {
       height: 960px;
@@ -31,8 +47,8 @@ html {
           background-repeat : no-repeat;
           background-position: center;
           .top_message {
-            // font-size: 90px;
-            font-size: 4.375vw;
+            font-size: 90px;
+            // font-size: 4.375vw;
             letter-spacing: 4.2px;
             color: #fff;
             margin-top: 282px;
@@ -275,8 +291,6 @@ html {
         color: #fff;
         .footerlogo {
           height: 32.9px;
-          // footerにheightを設定したらlogoが伸びた
-          // logoにheightを設定したら直ったがやり方あってるのかわからない
         }
         .social {
           margin-left: 590px;
