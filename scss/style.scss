@@ -145,6 +145,8 @@ html {
         @include tab {
           flex-direction: column};
         height: 730px;
+        @include tab {
+          height: 921px};
         .section2_img {
           @include tab {
             width: 768px};
@@ -153,11 +155,15 @@ html {
           margin-left: 122px;
           margin-top: 235px;
           @include tab {
+            margin-top: 59px;
+            margin-left: 28px;
             height: 337px};
           .section2_topmessage {
             color: #e7e7e7;
             font-size: 90px;
             margin-bottom: 92px;
+            @include tab {
+              margin-bottom: 13px};
           }
           h2 {
             font-weight: normal;
@@ -187,14 +193,27 @@ html {
       .section3_box {
         position: relative;
         display: flex;
+        @include tab {
+          flex-direction: column-reverse};
         height: 730px;
+        @include tab {
+          height: 921px};
         .section3_messagebox {
           margin-left: 195px;
           margin-top: 235px;
+          @include tab {
+            margin-top: 59px;
+            margin-left: 28px;
+            height: 337px};
           .section3_topmessage {
             color: #e7e7e7;
             font-size: 90px;
             margin-bottom: 92px;
+            @include tab {
+              margin-bottom: 13px};
+          }
+          h2 {
+            font-weight: normal;
           }
           .section3_message {
             font-size: 24px;
@@ -203,6 +222,9 @@ html {
         }
         .section3_img {
           margin-left: 300px;
+          @include tab {
+            width: 768px;
+            margin-left: 0};
         }
         .No2 {
           width: 168px;
