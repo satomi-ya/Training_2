@@ -30,6 +30,8 @@ html {
       .section1_box {
         margin: 0 180px 110px 190px;
         padding-top: 54.1px;
+        @include tab {
+          margin: 0 47px 92px 59px};
         .header {
           display: flex;
           .header_logo {
@@ -39,15 +41,25 @@ html {
             font-size: 14px;
             letter-spacing: 0.2px;
             color: #fff;
-            margin-left: 1080px;
+            margin-left: auto;
+            @include tab {
+              margin-right: 0};
           }
         }
         .message_box {
           background-image: url("../img/border.png");
           background-repeat : no-repeat;
           background-position: center;
+          background-size: contain;
+          width: 100%;
+          height: 250px;
           .top_message {
             font-size: 90px;
+            @include tab {
+              font-size: 64px};
+            h1 {
+              font-weight: normal;
+            }
             // font-size: 4.375vw;
             letter-spacing: 4.2px;
             color: #fff;
@@ -55,12 +67,17 @@ html {
             .top_message_p {
               margin-left: 400px;
               margin-bottom: 15px;
+              @include tab {
+                margin-left: 106px;
+                margin-bottom: 15px;};
             }
             .gnav {
               font-size: 14px;
               letter-spacing: 0.2px;
               color: #9071ea;
-              margin-left: 850px;
+              margin-left: auto;
+              @include tab {
+                margin-top: 167px};
               .gnav_flexbox {
                 display: flex;
                 justify-content: flex-end;
@@ -121,6 +138,8 @@ html {
         position: relative;
         display: flex;
         height: 730px;
+        .section2_img {
+        }
         .section2_messagebox {
           margin-left: 122px;
           margin-top: 235px;
