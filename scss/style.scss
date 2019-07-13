@@ -298,17 +298,32 @@ html {
       background-image: url("../img/footerbg.png");
       .section5_box {
         margin: 0 476px 150px 491px;
+        @include tab {
+          margin: 0 37px 150px 35px };
         padding-top: 226px;
+        @include tab {
+          padding-top: 121px };
         .bottom_message {
           display: flex;
           background-image: url("../img/border.png");
           background-repeat : no-repeat;
           background-position: center;
           // background-positionするとborderが消えた
+          @include tab {
+            flex-direction: column};
+          .section5_img {
+            @include tab {
+              margin: 0 auto 62px;
+              width: 156px};
+          }
           .bottom_message_p {
             margin-left: 21px;
+            @include tab {
+              margin-left: 0};
             .bottom_message_p1 {
               font-size: 90px;
+              @include tab {
+                font-size: 80px };
               color: #fff;
               letter-spacing: 4.2px;
             }
@@ -363,6 +378,8 @@ html {
         color: #fff;
         .footerlogo {
           height: 32.9px;
+          @include tab {
+            display: none};
         }
         .social {
           margin-left: 590px;
