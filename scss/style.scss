@@ -246,14 +246,31 @@ html {
       .section4_box {
         position: relative;
         display: flex;
+        @include tab {
+          flex-direction: column};
         height: 730px;
+        @include tab {
+          height: 921px};
+        .section4_img {
+          @include tab {
+            width: 768px};
+        }
         .section4_messagebox {
           margin-left: 122px;
           margin-top: 235px;
+          @include tab {
+            margin-top: 59px;
+            margin-left: 28px;
+            height: 337px};
           .section4_topmessage {
             color: #e7e7e7;
             font-size: 90px;
             margin-bottom: 92px;
+            @include tab {
+              margin-bottom: 13px};
+          }
+          h2 {
+            font-weight: normal;
           }
           .section4_message {
             font-size: 24px;
