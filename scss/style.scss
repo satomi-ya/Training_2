@@ -54,16 +54,19 @@ html {
           width: 100%;
           height: 250px;
           .top_message {
+            margin-top: 282px;
             font-size: 90px;
             @include tab {
+              margin-top: 174px;
               font-size: 64px};
             h1 {
               font-weight: normal;
+              @include tab {
+                margin-left: 27px};
             }
             // font-size: 4.375vw;
             letter-spacing: 4.2px;
             color: #fff;
-            margin-top: 282px;
             .top_message_p {
               margin-left: 400px;
               margin-bottom: 15px;
@@ -97,6 +100,8 @@ html {
           color: #fff;
           letter-spacing: 0.4px;
           margin-top: 177px;
+          @include tab {
+            margin-top: 260px};
           display: flex;
           justify-content: center;
           .appstore {
