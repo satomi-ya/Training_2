@@ -18,6 +18,9 @@ html {
       @content;
     }
   }
+  h1, h2 {
+    font-weight: normal;
+  }
 
   body {
     .section1 {
@@ -55,24 +58,19 @@ html {
           height: 250px;
           .top_message {
             margin-top: 282px;
-            font-size: 90px;
+            font-size: 4.375vw;
+            letter-spacing: 4.2px;
+            color: #fff;
             @include tab {
               margin-top: 174px;
               font-size: 64px};
             h1 {
-              font-weight: normal;
+              margin-bottom: 15px;
+              span {
+                margin-left: 26%;
+              }
               @include tab {
                 margin-left: 27px};
-            }
-            // font-size: 4.375vw;
-            letter-spacing: 4.2px;
-            color: #fff;
-            .top_message_p {
-              margin-left: 400px;
-              margin-bottom: 15px;
-              @include tab {
-                margin-left: 106px;
-                margin-bottom: 15px;};
             }
             .gnav {
               font-size: 14px;
@@ -169,9 +167,6 @@ html {
             @include tab {
               margin-bottom: 13px};
           }
-          h2 {
-            font-weight: normal;
-          }
           .section2_message {
             font-size: 24px;
             letter-spacing: 1.12px;
@@ -215,9 +210,6 @@ html {
             margin-bottom: 92px;
             @include tab {
               margin-bottom: 13px};
-          }
-          h2 {
-            font-weight: normal;
           }
           .section3_message {
             font-size: 24px;
@@ -273,9 +265,6 @@ html {
             @include tab {
               margin-bottom: 13px};
           }
-          h2 {
-            font-weight: normal;
-          }
           .section4_message {
             font-size: 24px;
             letter-spacing: 1.12px;
@@ -299,11 +288,16 @@ html {
     }
     .section5 {
       height: 960px;
+      width: 100%;
       background-image: url("../img/footerbg.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
       @include tab {
         height: 960px};
       .section5_box {
         margin: 0 476px 150px 491px;
+        width: 990px;
         @include tab {
           margin: 0 37px 50px 35px };
         padding-top: 226px;
