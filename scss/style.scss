@@ -136,8 +136,6 @@ html {
               text-decoration: none;
               color: #fff;
               font-size: 14px;
-              // 見本は14pxだけど明らかに入らない。
-              // 一定以上の小ささにならない？
             }
           }
         }
@@ -177,14 +175,18 @@ html {
           .section2_message {
             font-size: 24px;
             letter-spacing: 1.12px;
+            &:after {
+              content: "";
+              display: block;
+              background: #5e3db3;
+              width: 22px;
+              height: 5px;
+              border-radius: 2.5px;
+              margin-top: 80px;
+            }
             @include tab {
               &:after {
                 content: "";
-                display: block;
-                background: #5e3db3;
-                width: 22px;
-                height: 5px;
-                border-radius: 2.5px;
                 margin-top: 30px;
               }};
           }
@@ -195,8 +197,13 @@ html {
           background-color: #5e3db3;
           display: inline-block;
           position: absolute;
-          top: 211px;
-          left: 876px;
+          top: 28%;
+          left: 46%;
+          @include tab {
+            width: 116px;
+            height: 116px;
+            top: 490px;
+            left: 30px};
           display: flex;
           align-items: center;
           justify-content: center;
@@ -227,11 +234,12 @@ html {
         position: relative;
         height: 730px;
         display: flex;
+        justify-content: space-between;
         @include tab {
           height: 921px;
           flex-direction: column-reverse};
         .section3_messagebox {
-          margin-left: 195px;
+          margin-left: 10%;
           margin-top: 235px;
           @include tab {
             margin-top: 59px;
@@ -248,6 +256,20 @@ html {
           .section3_message {
             font-size: 24px;
             letter-spacing: 1.12px;
+            &:after {
+              content: "";
+              display: block;
+              background: #5e3db3;
+              width: 22px;
+              height: 5px;
+              border-radius: 2.5px;
+              margin-top: 80px;
+            }
+            @include tab {
+              &:after {
+                content: "";
+                margin-top: 30px;
+              }};
           }
         }
         .section3_img {
@@ -263,8 +285,13 @@ html {
           background-color: #5e3db3;
           display: inline-block;
           position: absolute;
-          top: 211px;
-          left: 876px;
+          top: 28%;
+          left: 46%;
+          @include tab {
+            width: 116px;
+            height: 116px;
+            top: 490px;
+            left: 30px};
           display: flex;
           align-items: center;
           justify-content: center;
@@ -324,6 +351,20 @@ html {
           .section4_message {
             font-size: 24px;
             letter-spacing: 1.12px;
+            &:after {
+              content: "";
+              display: block;
+              background: #5e3db3;
+              width: 22px;
+              height: 5px;
+              border-radius: 2.5px;
+              margin-top: 80px;
+            }
+            @include tab {
+              &:after {
+                content: "";
+                margin-top: 30px;
+              }};
           }
         }
         .No3 {
@@ -332,8 +373,13 @@ html {
           background-color: #5e3db3;
           display: inline-block;
           position: absolute;
-          top: 211px;
-          left: 876px;
+          top: 28%;
+          left: 46%;
+          @include tab {
+            width: 116px;
+            height: 116px;
+            top: 490px;
+            left: 30px};
           display: flex;
           align-items: center;
           justify-content: center;
@@ -460,35 +506,41 @@ html {
         }
       }
       footer {
-        height: 120px;
+        height: 168px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: rgba(10, 14, 52, 0.6);
-        padding: 70px 43px 0 48px;
+        margin-top: 170px;
         @include tab {
           margin-top: 146px;
           height: 95px;
           padding: 0 };
         color: #fff;
         .footerlogo {
+          display: block;
+          margin-left: 48px;
           height: 32.9px;
           @include tab {
             display: none};
         }
         .social {
-          margin-left: 590px;
           @include tab {
             margin-left: auto;
             margin-right: auto;
             display: flex};
           .icon_fb ,.icon_tw ,.icon_itg {
-            margin-left: 50px;
             color: #fff;
             @include tab {
               margin-top: 30px};
           }
+          .icon_tw ,.icon_itg {
+            margin-left: 50px;
+          }
         }
         .contactus {
-          margin-left: 500px;
+          display: block;
+          margin-right: 43px;
           @include tab {
             display: none};
         }
