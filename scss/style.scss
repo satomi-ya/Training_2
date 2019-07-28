@@ -8,11 +8,22 @@ html {
   $widthTab: 768px;
   $widthSp: 568px;
 
-  @mixin tab {
-    @media (min-width: $widthTab) and (max-width: ($widthPC)) {
+  @mixin pc {
+    @media (max-width: ($widthPC)) {
       @content;
     }
   }
+  @mixin tab {
+    @media (max-width: ($widthTab)) {
+      @content;
+    }
+  }
+
+  // @mixin tab {
+  //   @media (min-width: $widthTab) and (max-width: ($widthPC)) {
+  //     @content;
+  //   }
+  // }
   @mixin sp {
     @media (max-width: ($widthTab)) {
       @content;
