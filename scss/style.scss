@@ -144,22 +144,27 @@ html {
     .section2 {
       .section2_box {
         position: relative;
-        height: 730px;
+        // height: 730px;
         display: flex;
         @include tab {
           height: 921px;
           flex-direction: column};
-        .section2_img {
-          width:100%;
-          max-width: 100%;
-          height: auto;
-          @include tab {
-            width: 768px};
+        .section2_imgbox {
+          // width: 960px;
+          .section2_img {
+            width:100%;
+            max-width: 100%;
+            height: auto;
+            @include tab {
+              width: 768px};
+          }
         }
         .section2_messagebox {
-          width: 472px;
-          margin-left: 122px;
-          margin-top: 235px;
+          // width: 960px;
+          // padding-left: 122px;
+          // padding-top: 235px;
+          padding-left: 12.7%;
+          padding-top: 10%;
           @include tab {
             margin-top: 59px;
             margin-left: 28px;
@@ -167,7 +172,8 @@ html {
           .section2_topmessage {
             color: #e7e7e7;
             font-size: 4.687vw;
-            margin-bottom: 92px;
+            // margin-bottom: 92px;
+            margin-bottom: 12.6%;
             @include tab {
               font-size: 90px;
               margin-bottom: 13px};
@@ -182,7 +188,8 @@ html {
               width: 22px;
               height: 5px;
               border-radius: 2.5px;
-              margin-top: 80px;
+              // margin-top: 80px;
+              margin-top: 12.6%;
             }
             @include tab {
               &:after {
@@ -232,7 +239,7 @@ html {
     .section3 {
       .section3_box {
         position: relative;
-        height: 730px;
+        // height: 730px;
         display: flex;
         justify-content: space-between;
         @include tab {
@@ -240,7 +247,8 @@ html {
           flex-direction: column-reverse};
         .section3_messagebox {
           margin-left: 10%;
-          margin-top: 235px;
+          // margin-top: 235px;
+          padding-top: 10%;
           @include tab {
             margin-top: 59px;
             margin-left: 28px;
@@ -248,7 +256,8 @@ html {
           .section3_topmessage {
             color: #e7e7e7;
             font-size: 4.375vw;
-            margin-bottom: 92px;
+            // margin-bottom: 92px;
+            margin-bottom: 12.6%;
             @include tab {
               font-size: 90px;
               margin-bottom: 13px};
@@ -263,7 +272,8 @@ html {
               width: 22px;
               height: 5px;
               border-radius: 2.5px;
-              margin-top: 80px;
+              // margin-top: 80px;
+              margin-top: 12.6%;
             }
             @include tab {
               &:after {
@@ -323,7 +333,7 @@ html {
         display: flex;
         @include tab {
           flex-direction: column};
-        height: 730px;
+        // height: 730px;
         @include tab {
           height: 921px};
         .section4_img {
@@ -334,8 +344,10 @@ html {
             width: 768px};
         }
         .section4_messagebox {
-          margin-left: 122px;
-          margin-top: 235px;
+          // margin-left: 122px;
+          // margin-top: 235px;
+          padding-left: 12.7%;
+          padding-top: 10%;
           @include tab {
             margin-top: 59px;
             margin-left: 28px;
@@ -343,7 +355,8 @@ html {
           .section4_topmessage {
             color: #e7e7e7;
             font-size: 4.375vw;
-            margin-bottom: 92px;
+            // margin-bottom: 92px;
+            margin-bottom: 12.6%;
             @include tab {
               font-size: 90px;
               margin-bottom: 13px};
@@ -358,7 +371,8 @@ html {
               width: 22px;
               height: 5px;
               border-radius: 2.5px;
-              margin-top: 80px;
+              // margin-top: 80px;
+              margin-top: 12.6%;
             }
             @include tab {
               &:after {
