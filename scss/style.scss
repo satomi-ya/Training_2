@@ -20,11 +20,6 @@ html {
     }
   }
 
-  // @mixin tab {
-  //   @media (min-width: $widthTab) and (max-width: ($widthPC)) {
-  //     @content;
-  //   }
-  // }
   @mixin sp {
     @media (max-width: ($widthTab)) {
       @content;
