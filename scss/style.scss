@@ -152,26 +152,36 @@ html {
       .section2_box {
         position: relative;
         // height: 730px;
+        width: 100%;
+        align-items: flex-end;
         display: flex;
         @include tab {
           height: 921px;
           flex-direction: column};
         .section2_imgbox {
+          width:50%;
+          height: 730px;
           // width: 960px;
           .section2_img {
-            width:100%;
+            width: 100%;
             max-width: 100%;
-            height: auto;
+            // height: auto;
             @include tab {
               width: 768px};
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
         .section2_messagebox {
           // width: 960px;
           // padding-left: 122px;
           // padding-top: 235px;
-          padding-left: 12.7%;
-          padding-top: 10%;
+          width: 50%;
+          // padding-left: 12.7%;
+          // padding-top: 10%;
           @include tab {
             margin-top: 59px;
             margin-left: 28px;
@@ -179,8 +189,10 @@ html {
           .section2_topmessage {
             color: #e7e7e7;
             font-size: 4.687vw;
+            display: flex;
+            align-items: center;
             // margin-bottom: 92px;
-            margin-bottom: 12.6%;
+            // margin-bottom: 12.6%;
             @include tab {
               font-size: 90px;
               margin-bottom: 13px};
