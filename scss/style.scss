@@ -160,7 +160,6 @@ html {
         .section2_imgbox {
           width:50%;
           height: 730px;
-          // width: 960px;
           @include tab {
             width: 100%};
           .section2_img {
@@ -184,6 +183,7 @@ html {
           // padding-left: 12.7%;
           // padding-top: 10%;
           @include tab {
+            width: 100%;
             margin-top: 59px;
             margin-left: 28px;
             height: 337px};
@@ -195,6 +195,7 @@ html {
             margin-left: 125px;
             // margin-bottom: 12.6%;
             @include tab {
+              margin-left: 30px;
               margin-bottom: 13px};
           }
           .section2_message {
@@ -211,6 +212,8 @@ html {
               margin-top: 12.6%;
             }
             @include tab {
+              margin-left: 30px;
+              margin-top: 30px;
               &:after {
                 content: "";
                 margin-top: 30px;
@@ -270,6 +273,7 @@ html {
           // margin-left: 10%;
           // padding-top: 10%;
           @include tab {
+            width: 100%;
             margin-top: 59px;
             margin-left: 28px;
             height: 337px};
@@ -280,12 +284,12 @@ html {
             // margin-bottom: 12.6%;
             margin-left: 30px;
             @include tab {
+              margin-left: 30px;
               margin-bottom: 13px};
           }
           .section3_message {
             font-size: 24px;
             letter-spacing: 1.12px;
-            // margin-left: 125px;
             margin: 150px 400px 150px 30px;
             &:after {
               content: "";
@@ -294,10 +298,11 @@ html {
               width: 22px;
               height: 5px;
               border-radius: 2.5px;
-              // margin-top: 80px;
               margin-top: 12.6%;
             }
             @include tab {
+              margin-top: 30px;
+              margin-left: 30px;
               &:after {
                 content: "";
                 margin-top: 30px;
@@ -400,6 +405,7 @@ html {
           // padding-left: 12.7%;
           // padding-top: 10%;
           @include tab {
+            width: 100%;
             margin-top: 59px;
             margin-left: 28px;
             height: 337px};
@@ -410,6 +416,7 @@ html {
             // margin-bottom: 12.6%;
             margin-left: 120px;
             @include tab {
+              margin-left: 30px;
               margin-bottom: 13px};
           }
           .section4_message {
@@ -426,6 +433,8 @@ html {
               margin-top: 12.6%;
             }
             @include tab {
+              margin-top: 30px;
+              margin-left: 30px;
               &:after {
                 content: "";
                 margin-top: 30px;
