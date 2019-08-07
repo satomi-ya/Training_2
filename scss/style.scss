@@ -26,25 +26,21 @@ html {
       .section1_box {
         margin: 0 180px 110px 190px;
         padding-top: 54.1px;
-        //   @include tab {
-        //     margin: 0 47px 92px 59px};
-        // }
-      }
-      .header {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        .header_logo {
-          width: 189px;
-        }
-        .another_menu {
-          font-size: 14px;
-          letter-spacing: 0.2px;
-          color: #fff;
-          margin-left: auto;
-          //   @include tab {
-          //     margin-right: 0};
-          // }
+
+        .header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          .header_logo {
+            width: 189px;
+          }
+          .another_menu {
+            font-size: 14px;
+            letter-spacing: 0.2px;
+            color: black;
+            margin-left: 1080px;
+          }
+
         }
         .message_box {
           background-image: url("../img/border.png");
