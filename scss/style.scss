@@ -8,30 +8,20 @@ html {
   $widthTab: 768px;
   $widthSp: 568px;
 
-  @mixin pc {
-    @media (max-width: ($widthPC)) {
-      @content;
-    }
-  }
+
   @mixin tab {
-    @media (max-width: ($widthTab)) {
+    @media (min-width: $widthTab) and (max-width: ($widthPC)) {
       @content;
     }
   }
 
-  // @mixin tab {
-  //   @media (min-width: $widthTab) and (max-width: ($widthPC)) {
-  //     @content;
-  //   }
-  // }
   @mixin sp {
     @media (max-width: ($widthTab)) {
       @content;
     }
   }
-  h1, h2 {
-    font-weight: normal;
-  }
+
+
 
   body {
     .section1 {
@@ -69,22 +59,25 @@ html {
           height: 250px;
           .top_message {
 
-            font-size: 4.375vw;
-            letter-spacing: 4.2px;
-            color: #fff;
+            margin-top: 282px;
+            font-size: 90px;
             @include tab {
               margin-top: 174px;
               font-size: 64px};
             h1 {
-              margin-bottom: 15px;
+              font-weight: normal;
               @include tab {
                 margin-left: 27px};
-              span {
-                display: block;
-                margin-left: 26%;
-                @include tab {
-                  margin-left: 16%};
-              }
+            }
+            // font-size: 4.375vw;
+            letter-spacing: 4.2px;
+            color: #fff;
+            .top_message_p {
+              margin-left: 400px;
+              margin-bottom: 15px;
+              @include tab {
+                margin-left: 106px;
+                margin-bottom: 15px;};
 
             }
             .gnav {
@@ -92,7 +85,9 @@ html {
               letter-spacing: 0.2px;
               color: #9071ea;
 
-              margin-left: 850px;
+              margin-left: auto;
+              @include tab {
+                margin-top: 167px};
 
               .gnav_flexbox {
                 display: flex;
@@ -156,18 +151,10 @@ html {
         position: relative;
         // height: 730px;
         display: flex;
-        @include tab {
-          height: 921px;
-          flex-direction: column};
-        .section2_imgbox {
-          // width: 960px;
-          .section2_img {
-            width:100%;
-            max-width: 100%;
-            height: auto;
-            @include tab {
-              width: 768px};
-          }
+
+        height: 730px;
+        .section2_img {
+
         }
         .section2_messagebox {
           // width: 960px;
@@ -545,8 +532,7 @@ html {
           display: block;
           margin-left: 48px;
           height: 32.9px;
-          @include tab {
-            display: none};
+
         }
         .social {
           @include tab {
