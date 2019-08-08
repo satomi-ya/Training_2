@@ -20,7 +20,7 @@ html {
   }
 
   @mixin sp {
-    @media (max-width: ($widthTab)) {
+    @media (max-width: ($widthSp)) {
       @content;
     }
   }
@@ -37,10 +37,10 @@ html {
       background-position: center center;
       background-size: cover;
       .section1_box {
+        @include sp {margin: 0 19px 18px};
         margin: 0 180px 110px 190px;
         padding-top: 54.1px;
-        @include tab {
-          margin: 0 47px 92px 59px};
+        @include tab {margin: 0 47px 92px 59px};
         .header {
           display: flex;
           .header_logo {
