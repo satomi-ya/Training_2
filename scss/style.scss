@@ -188,33 +188,34 @@ html {
     }
     .section2 {
       .section2_box {
+        @include tab {
+          height: 921px;
+          flex-direction: column};
         position: relative;
         // height: 730px;
         width: 100%;
         align-items: flex-end;
         display: flex;
-        @include tab {
-          height: 921px;
-          flex-direction: column};
+        @include sp {height: 570px};
         .section2_imgbox {
+          @include tab {height: 351px};
           width:50%;
           height: 730px;
-          @include tab {
-            width: 100%};
+          @include sp {width: 100%};
           .section2_img {
             width: 100%;
             max-width: 100%;
             // height: auto;
-            @include tab {
-              width: 768px};
+            @include tab {width: 768px};
           }
           img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
             @include tab {
               width: 100%;
               height: 584px};
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include sp {height: 351px};
           }
         }
         .section2_messagebox {
@@ -227,20 +228,22 @@ html {
             margin-left: 28px;
             height: 337px};
           .section2_topmessage {
+            @include tab {
+              margin-left: 30px;
+              margin-bottom: 13px};
             color: #e7e7e7;
             display: flex;
             align-items: center;
             font-size: 90px;
             margin-left: 125px;
             // margin-bottom: 12.6%;
-            @include tab {
-              margin-left: 30px;
-              margin-bottom: 13px};
+            @include sp {font-size: 28px};
           }
           .section2_message {
             font-size: 24px;
             letter-spacing: 1.12px;
             margin: 130px 0 100px 125px;
+            @include sp {font-size: 16px};
             &:after {
               content: "";
               display: block;
@@ -260,6 +263,11 @@ html {
           }
         }
         .No1 {
+          @include tab {
+            width: 116px;
+            height: 116px;
+            top: 490px;
+            left: 30px};
           width: 168px;
           height: 155px;
           background-color: #5e3db3;
@@ -267,15 +275,16 @@ html {
           position: absolute;
           top: 28%;
           left: 45.5%;
-          @include tab {
-            width: 116px;
-            height: 116px;
-            top: 490px;
-            left: 30px};
+          @include sp {
+            width: 70px;
+            height: 70px;
+            top: 290px;
+            left: 20px};
           display: flex;
           align-items: center;
           justify-content: center;
           p {
+            @include sp {font-size: 14px};
             color: #fff;
             text-align: center;
             display: flex;
@@ -299,34 +308,41 @@ html {
     }
     .section3 {
       .section3_box {
+        @include tab {
+          height: 921px;
+          flex-direction: column-reverse};
         position: relative;
         // height: 730px;
         width: 100%;
         display: flex;
         align-items: flex-end;
         justify-content:flex-end;
-        @include tab {
-          height: 921px;
-          flex-direction: column-reverse};
+        @include sp {height: 570px};
         .section3_messagebox {
-          // margin-left: 10%;
-          // padding-top: 10%;
           @include tab {
             width: 100%;
             margin-top: 59px;
             margin-left: 28px;
             height: 337px};
+          // margin-left: 10%;
+          // padding-top: 10%;
+          @include sp {height: 280px};
           .section3_topmessage {
+            @include tab {
+              margin-left: 30px;
+              margin-bottom: 13px};
             color: #e7e7e7;
             // font-size: 4.375vw;
             font-size: 90px;
             // margin-bottom: 12.6%;
             margin-left: 30px;
-            @include tab {
-              margin-left: 30px;
-              margin-bottom: 13px};
+            @include sp {font-size: 28px};
           }
           .section3_message {
+            @include sp {
+              font-size: 16px;
+              margin: 0;
+            };
             font-size: 24px;
             letter-spacing: 1.12px;
             margin: 150px 400px 150px 30px;
@@ -361,15 +377,21 @@ html {
               width: 768px};
           }
           img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
             @include tab {
               width: 100%;
               height: 584px};
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include sp {height: 351px};
           }
         }
         .No2 {
+          @include tab {
+            width: 116px;
+            height: 116px;
+            top: 490px;
+            left: 30px};
           width: 168px;
           height: 155px;
           background-color: #5e3db3;
@@ -377,15 +399,16 @@ html {
           position: absolute;
           top: 28%;
           left: 45.5%;
-          @include tab {
-            width: 116px;
-            height: 116px;
-            top: 490px;
-            left: 30px};
+          @include sp {
+            width: 70px;
+            height: 70px;
+            top: 290px;
+            left: 20px};
           display: flex;
           align-items: center;
           justify-content: center;
           p {
+            @include sp {font-size: 14px};
             color: #fff;
             text-align: center;
             display: flex;
