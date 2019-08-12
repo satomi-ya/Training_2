@@ -51,7 +51,14 @@ html {
             width: 189px;
             @include sp {
               margin-left: auto;
-              margin-right: auto;};
+              margin-right: auto};
+            img {
+              @include sp {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 137px};
+            }
           }
           .another_menu {
             @include tab {
@@ -106,19 +113,23 @@ html {
               letter-spacing: 0.2px;
               color: #9071ea;
               margin-left: auto;
-              @include sp {margin-top: 220px};
+              @include sp {margin-top: 200px};
               .gnav_flexbox {
                 @include tab {
                   justify-content: space-between};
                 display: flex;
                 justify-content: flex-end;
-                @include sp {flex-wrap: wrap};
+                @include sp {
+                  flex-wrap: wrap;
+                  justify-content: center;
+                };
                 li {
                   @include tab {
                     margin-left: 0};
                   list-style: none;
                   margin-left: 50px;
-                  @include sp {margin-left: 15px;};
+                  @include sp {
+                    margin: 0 15px 7px};
                   a {
                     text-decoration: none;
                     color: #9071ea;
@@ -190,8 +201,9 @@ html {
         display: flex;
         @include sp {height: 570px};
         .section2_imgbox {
-          @include tab {height: 351px};
-          width:50%;
+          @include tab {
+            width:100%};
+          // width:50%;
           height: 730px;
           @include sp {width: 100%};
           .section2_img {
@@ -547,7 +559,7 @@ html {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      @include sp {height: 518px};
+      @include sp {height: 625px};
       .section5_box {
         // margin: 0 476px 150px 491px;
         background-image: url("../img/border.png");
