@@ -1,8 +1,4 @@
 html {
-  // width: 1920px;
-  width: 100%;
-  height: 4109px;
-  font-family: Helvetica;
 
   $widthPC: 1024px;
   $widthTab: 768px;
@@ -24,6 +20,13 @@ html {
       @content;
     }
   }
+
+  // width: 1920px;
+  width: 100%;
+  height: 4109px;
+  font-family: Helvetica;
+  @include sp {height: 2259px};
+
   h1, h2 {
     font-weight: normal;
   }
@@ -48,8 +51,7 @@ html {
             width: 189px;
             @include sp {
               margin-left: auto;
-              margin-right: auto;
-            };
+              margin-right: auto;};
           }
           .another_menu {
             @include tab {
@@ -85,14 +87,11 @@ html {
               margin-top: 70px;
               font-size: 32px};
             h1 {
-              @include tab {
-                margin-left: 27px};
+              @include tab {margin-left: 27px};
               margin-bottom: 15px;
-              @include sp {
-                margin-left: 0};
+              @include sp {margin-left: 0};
               span {
-                @include tab {
-                  margin-left: 16%};
+                @include tab {margin-left: 16%};
                 display: block;
                 margin-left: 26%;
                 @include sp {
@@ -107,22 +106,19 @@ html {
               letter-spacing: 0.2px;
               color: #9071ea;
               margin-left: auto;
-              @include sp {
-                margin-top: 220px};
+              @include sp {margin-top: 220px};
               .gnav_flexbox {
                 @include tab {
                   justify-content: space-between};
                 display: flex;
                 justify-content: flex-end;
-                @include sp {
-                  flex-wrap: wrap};
+                @include sp {flex-wrap: wrap};
                 li {
                   @include tab {
                     margin-left: 0};
                   list-style: none;
                   margin-left: 50px;
-                  @include sp {
-                    margin-left: 15px;};
+                  @include sp {margin-left: 15px;};
                   a {
                     text-decoration: none;
                     color: #9071ea;
@@ -133,13 +129,11 @@ html {
           }
         }
         .music_panel {
-          @include tab {
-            margin-top: 260px};
+          @include tab {margin-top: 260px};
           color: #fff;
           letter-spacing: 0.4px;
           margin-top: 177px;
-          @include sp {
-            margin-top: 60px};
+          @include sp {margin-top: 60px};
           display: flex;
           justify-content: center;
           .appstore {
@@ -160,15 +154,13 @@ html {
             display: flex;
             @include sp {
               width: 142px;
-              height: 40px;
-            };
+              height: 40px;};
             .icon_apple , .icon_google {
               margin-left: 40px;
               margin-top: 15px;
               @include sp {
                 margin-left: 20px;
-                margin-top: 5px;
-              };
+                margin-top: 5px;  };
             }
             a {
               margin-left: 15px;
@@ -219,14 +211,15 @@ html {
           }
         }
         .section2_messagebox {
-          width: 50%;
-          // padding-left: 12.7%;
-          // padding-top: 10%;
           @include tab {
             width: 100%;
             margin-top: 59px;
             margin-left: 28px;
             height: 337px};
+          width: 50%;
+          // padding-left: 12.7%;
+          // padding-top: 10%;
+          @include sp {margin-top: 30px};
           .section2_topmessage {
             @include tab {
               margin-left: 30px;
@@ -326,7 +319,7 @@ html {
             height: 337px};
           // margin-left: 10%;
           // padding-top: 10%;
-          @include sp {height: 280px};
+          @include sp {margin-top: 30px};
           .section3_topmessage {
             @include tab {
               margin-left: 30px;
@@ -367,14 +360,12 @@ html {
         .section3_imgbox {
           width:50%;
           height: 730px;
-          @include tab {
-            width: 100%};
+          @include tab {width: 100%};
           .section3_img {
             width:100%;
             max-width: 100%;
             // height: auto;
-            @include tab {
-              width: 768px};
+            @include tab {width: 768px};
           }
           img {
             @include tab {
@@ -440,48 +431,49 @@ html {
           height: 921px;
           flex-direction: column};
         // height: 730px;
-        @include tab {
-          height: 921px};
+        @include sp {height: 570px};
         .section4_imgbox {
           width:50%;
           height: 730px;
-          @include tab {
-            width:100%};
+          @include tab {width:100%};
           .section4_img {
             width:100%;
             max-width: 100%;
             // height: auto;
-            @include tab {
-              width: 768px};
+            @include tab {width: 768px};
           }
           img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
             @include tab {
               width: 100%;
               height: 584px};
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include sp {height: 351px};
           }
         }
         .section4_messagebox {
-          // padding-left: 12.7%;
-          // padding-top: 10%;
           @include tab {
             width: 100%;
             margin-top: 59px;
             margin-left: 28px;
             height: 337px};
+          // padding-left: 12.7%;
+          // padding-top: 10%;
+          @include sp {margin-top: 30px};
           .section4_topmessage {
+            @include tab {
+              margin-left: 30px;
+              margin-bottom: 13px};
             color: #e7e7e7;
             // font-size: 4.375vw;
             font-size: 90px;
             // margin-bottom: 12.6%;
             margin-left: 120px;
-            @include tab {
-              margin-left: 30px;
-              margin-bottom: 13px};
+            @include sp {font-size: 28px};
           }
           .section4_message {
+            @include sp {font-size: 16px};
             font-size: 24px;
             letter-spacing: 1.12px;
             margin: 180px 0 100px  120px;
@@ -504,6 +496,11 @@ html {
           }
         }
         .No3 {
+          @include tab {
+            width: 116px;
+            height: 116px;
+            top: 490px;
+            left: 30px};
           width: 168px;
           height: 155px;
           background-color: #5e3db3;
@@ -511,15 +508,16 @@ html {
           position: absolute;
           top: 28%;
           left: 45.5%;
-          @include tab {
-            width: 116px;
-            height: 116px;
-            top: 490px;
-            left: 30px};
+          @include sp {
+            width: 70px;
+            height: 70px;
+            top: 290px;
+            left: 20px};
           display: flex;
           align-items: center;
           justify-content: center;
           p {
+            @include sp {font-size: 14px};
             color: #fff;
             text-align: center;
             display: flex;
@@ -542,14 +540,14 @@ html {
       }
     }
     .section5 {
+      @include tab {height: 960px};
       height: 960px;
       width: 100%;
       background-image: url("../img/footerbg.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      @include tab {
-        height: 960px};
+      @include sp {height: 518px};
       .section5_box {
         // margin: 0 476px 150px 491px;
         background-image: url("../img/border.png");
@@ -557,11 +555,14 @@ html {
         background-position: center;
         margin: 0 180px 110px 190px;
         @include tab {
+          padding-top: 121px;
           background-position: 350px 250px;
           margin: 0 37px 50px 35px };
         padding-top: 226px;
-        @include tab {
-          padding-top: 121px };
+        @include sp {
+          background-position: 150px 200px;
+          background-size: 100px 120px;
+          padding-top: 96px };
         .bottom_message {
           display: flex;
           justify-content: center;
@@ -569,38 +570,49 @@ html {
             background-position: 400px 50px;
             flex-direction: column};
           .section5_imgbox {
-            @include tab {
-              width: 696px};
+            @include tab {width: 696px};
+            // 空白
+            @include sp {width: 320px};
             .section5_img {
               @include tab {
                 display: block;
                 margin: 0 auto 62px;
                 width: 156px};
+              // 空白
+              @include sp {
+                margin-bottom: 40px;
+                width: 88px};
             }
           }
           .bottom_message_p {
-            display: inline-block;
-            text-align: center;
-            margin-left: 21px;
             @include tab {
               width: 700px;
               margin-left: 0};
+            display: inline-block;
+            text-align: center;
+            margin-left: 21px;
+            @include sp {width: 320px};
             .bottom_message_p1 {
-              font-size: 4.375vw;
               @include tab {
                 margin-bottom: 3px;
                 margin-left: 0;
                 font-size: 80px };
+              font-size: 4.375vw;
               color: #fff;
               letter-spacing: 4.2px;
+              @include sp {
+                font-size: 32px;
+                margin-right: 0;
+                margin-bottom: 6px};
             }
             .bottom_message_p2 {
-              display: block;
-              color: #a496ca;
-              font-size: 1.875vw;
               @include tab {
                 margin-left: 0;
                 font-size: 36px };
+              display: block;
+              color: #a496ca;
+              font-size: 1.875vw;
+              @include sp {font-size: 15px};
             }
           }
         }
@@ -610,6 +622,7 @@ html {
           margin-top: 177px;
           display: flex;
           justify-content: center;
+          @include sp {margin-top: 60px};
           .appstore {
             margin-right: 20px;
           }
@@ -626,9 +639,15 @@ html {
             box-shadow: 0 16px 24px 0 rgba(10, 14, 52, 0.5);
             background-color: #5c3caf;
             display: flex;
+            @include sp {
+              width: 142px;
+              height: 40px;};
             .icon_apple , .icon_google{
               margin-left: 40px;
               margin-top: 15px;
+              @include sp {
+                margin-left: 20px;
+                margin-top: 5px };
             }
             a {
               margin-left: 15px;
@@ -637,6 +656,10 @@ html {
               text-decoration: none;
               color: #fff;
               font-size: 14px;
+              @include sp {
+                margin-left: 0;
+                margin-top: 5px;
+                font-size: 8px;};
             }
           }
         }
@@ -657,8 +680,7 @@ html {
           display: block;
           margin-left: 48px;
           height: 32.9px;
-          @include tab {
-            display: none};
+          @include tab {display: none};
         }
         .social {
           @include tab {
@@ -667,8 +689,7 @@ html {
             display: flex};
           .icon_fb ,.icon_tw ,.icon_itg {
             color: #fff;
-            @include tab {
-              margin-top: 30px};
+            @include tab {margin-top: 30px};
           }
           .icon_tw ,.icon_itg {
             margin-left: 50px;
@@ -677,8 +698,7 @@ html {
         .contactus {
           display: block;
           margin-right: 43px;
-          @include tab {
-            display: none};
+          @include tab {display: none};
         }
       }
     }
