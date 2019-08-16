@@ -170,8 +170,10 @@ html {
               margin-left: 40px;
               margin-top: 15px;
               @include sp {
+                font-size: 24px;
                 margin-left: 20px;
-                margin-top: 5px;  };
+                margin-top: auto;
+                margin-bottom: auto;};
             }
             a {
               margin-left: 15px;
@@ -181,8 +183,9 @@ html {
               color: #fff;
               font-size: 14px;
               @include sp {
-                margin-left: 0;
-                margin-top: 5px;
+                margin-left: 5px;
+                margin-top: auto;
+                margin-bottom: auto;
                 font-size: 8px;};
             }
           }
@@ -658,8 +661,10 @@ html {
               margin-left: 40px;
               margin-top: 15px;
               @include sp {
+                font-size: 24px;
                 margin-left: 20px;
-                margin-top: 5px };
+                margin-top: auto;
+                margin-bottom: auto;};
             }
             a {
               margin-left: 15px;
@@ -669,8 +674,9 @@ html {
               color: #fff;
               font-size: 14px;
               @include sp {
-                margin-left: 0;
-                margin-top: 5px;
+                margin-left: 5px;
+                margin-top: auto;
+                margin-bottom: auto;
                 font-size: 8px;};
             }
           }
