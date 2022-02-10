@@ -27,7 +27,7 @@
     "browser-sync": "^2.26.0",
     "concurrently": "^4.0.1",
     "jquery": "^3.3.1",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "onchange": "^5.0.2",
     "parallelshell": "^3.0.2",
     "popper.js": "^1.14.4",
